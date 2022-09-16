@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import vtiger.GenericUtility.BaseClass;
@@ -14,7 +15,7 @@ import vtigers.ObjectRepository.ProductInfoPage;
 import vtigers.ObjectRepository.ProductsPage;
 import vtigers.ObjectRepository.VendorInfoPage;
 import vtigers.ObjectRepository.VendorsPage;
-
+@Listeners(vtiger.GenericUtility.ListnersImplementation.class)
 public class CreateProductWithVendorTestNG extends BaseClass {
 	@Test(groups = "SmokeTesting")
 	public void createProductWithVendorNameTest() throws IOException

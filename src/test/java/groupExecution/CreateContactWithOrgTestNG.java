@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import vtiger.GenericUtility.BaseClass;
@@ -16,6 +17,7 @@ import vtigers.ObjectRepository.OrgInfoPage;
 import vtigers.ObjectRepository.OrganizationPage;
 import vtigers.ObjectRepository.createNewOrgPage;
 
+@Listeners(vtiger.GenericUtility.ListnersImplementation.class)
 public class CreateContactWithOrgTestNG extends BaseClass {
 	@Test(groups = "RegressionTesting")
 	public void createContact() throws EncryptedDocumentException, IOException, InterruptedException
