@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="groupExecution.CreateOrgTestNG">
+      <class name="calendorPopUp.MakeMyTripTest">
         <methods>
-          <include name="bcConfig"/>
-          <include name="createOrg"/>
-          <include name="acConfig"/>
-          <include name="bsConfig"/>
-          <include name="asConfig"/>
-          <include name="amConfig"/>
-          <include name="bmConfig"/>
+          <include name="bookTicket"/>
         </methods>
-      </class> <!-- groupExecution.CreateOrgTestNG -->
+      </class> <!-- calendorPopUp.MakeMyTripTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
