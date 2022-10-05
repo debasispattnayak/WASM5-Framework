@@ -60,7 +60,7 @@ public class WebDriverUtility {
 	public void waitForElementToBeClickable(WebDriver driver,WebElement element)
 	{
 		WebDriverWait wait=new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.elementToBeClickable(element));
+		 wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
 	/**
@@ -160,10 +160,10 @@ public class WebDriverUtility {
 	  * This method will perform right click on page
 	  * @param driver
 	  */
-	 public void rightClickOn(WebElement element,WebDriver driver)
+	 public void rightClickOn(WebDriver driver)
 	 {
 		 Actions a=new Actions(driver);
-		 a.contextClick(element).perform();
+		 a.contextClick().perform();
 	 }
 	 /**
 	  * This method will perform right click on a particular element

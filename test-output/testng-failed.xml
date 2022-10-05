@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="calendorPopUp.MakeMyTripTest">
+      <class name="dynamictable.DynamicTable">
         <methods>
-          <include name="bookTicket"/>
+          <include name="test03"/>
         </methods>
-      </class> <!-- calendorPopUp.MakeMyTripTest -->
+      </class> <!-- dynamictable.DynamicTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
